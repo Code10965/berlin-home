@@ -42,6 +42,7 @@
       "facts": [
         { "label": "Zimmer", "value": "2" },
         { "label": "Fläche", "value": "130 m²" },
+        { "label": "Garten", "value": "25 m²" },
         { "label": "Haus", "value": "Altbau, Erdgeschoss" },
         { "label": "Energieausweis", "value": "auf Anfrage" },
         { "label": "Grundmiete", "value": "1.410 Euro" },

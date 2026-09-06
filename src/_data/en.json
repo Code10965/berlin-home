@@ -42,6 +42,7 @@
       "facts": [
         { "label": "Rooms", "value": "2" },
         { "label": "Size", "value": "130 m²" },
+        { "label": "Garden", "value": "25 m²" },
         { "label": "Building", "value": "Pre-war, ground floor" },
         { "label": "Energy certificate", "value": "on request" },
         { "label": "Base rent", "value": "€1,430" },

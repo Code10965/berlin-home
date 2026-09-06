@@ -42,6 +42,7 @@
       "facts": [
         { "label": "Kamers", "value": "2" },
         { "label": "Oppervlakte", "value": "130 m²" },
+        { "label": "Tuin", "value": "25 m²" },
         { "label": "Pand", "value": "Oudbouw, begane grond" },
         { "label": "Energielabel", "value": "op aanvraag" },
         { "label": "Kale huur", "value": "1.410 euro" },
