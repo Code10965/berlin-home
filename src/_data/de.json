@@ -46,7 +46,7 @@
         { "label": "Haus", "value": "Altbau, Erdgeschoss" },
         { "label": "Energieausweis", "value": "auf Anfrage" },
         { "label": "Grundmiete", "value": "1.410 Euro" },
-        { "label": "Nebenkosten", "value": "320 Euro" },
+        { "label": "Nebenkosten excl. Grundsteuer", "value": "320 Euro" },
         { "label": "Besonderheit", "value": "2 separate Eingänge" }
       ]
     },

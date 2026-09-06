@@ -46,7 +46,7 @@
         { "label": "Pand", "value": "Oudbouw, begane grond" },
         { "label": "Energielabel", "value": "op aanvraag" },
         { "label": "Kale huur", "value": "1.410 euro" },
-        { "label": "Servicekosten", "value": "320 euro" },
+        { "label": "Servicekosten excl. onroerendgoedbelasting", "value": "320 euro" },
         { "label": "Bijzonderheid", "value": "2 aparte ingangen" }
       ]
     },
