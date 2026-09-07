@@ -19,6 +19,7 @@
    Datenschutz) - deshalb hier über page_key ausgewählt. #}
 {% set meta_title = t.meta["title_" + page_key] %}
 {% set meta_description = t.meta["description_" + page_key] %}
+{% set page_urls = pages[page_key] %}
 
 <!doctype html>
 <html lang="{{ lang }}">
@@ -27,6 +28,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ meta_title }}</title>
     <meta name="description" content="{{ meta_description }}" />
+
+    {# ---------- Open Graph / Twitter Card ----------
+       Bestimmt das Bild + den Text, den Messenger (WhatsApp, iMessage, Slack
+       ...) und soziale Netzwerke anzeigen, wenn jemand einen Link zu dieser
+       Seite teilt. og:image MUSS eine absolute URL sein (mit https://...) -
+       ein relativer Pfad wie "/assets/..." funktioniert hier NICHT, weil
+       Messenger-Apps die Seite nicht selbst aufrufen, sondern das Bild direkt
+       von der angegebenen Adresse laden. Deshalb {{ site.baseUrl }} davor. #}
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ meta_title }}" />
+    <meta property="og:description" content="{{ meta_description }}" />
+    <meta property="og:image" content="{{ site.baseUrl }}/assets/media/og/og-preview.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="{{ site.baseUrl }}{{ page_urls[lang] }}" />
+    <meta property="og:locale" content="{{ lang }}" />
+    <meta name="twitter:card" content="summary_large_image" />
+
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; object-src 'none'; base-uri 'self'">
 
     {# Absolute statt relative Pfade (/assets/... statt favicon/...): die
@@ -44,7 +63,6 @@
        page_key die URL je Sprache fest, z.B. pages.imprint.en. Damit
        müssen wir die Sprach-URLs nicht von Hand tippen und nichts kann
        auseinanderlaufen. #}
-    {% set page_urls = pages[page_key] %}
     {% for altLang, url in page_urls %}
     <link rel="alternate" hreflang="{{ altLang }}" href="{{ site.baseUrl }}{{ url }}" />
     {% endfor %}
