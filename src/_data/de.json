@@ -47,6 +47,7 @@
         { "label": "Energieausweis", "value": "auf Anfrage" },
         { "label": "Grundmiete", "value": "1.410 Euro" },
         { "label": "Nebenkosten excl. Grundsteuer", "value": "320 Euro" },
+        { "label": "Ausstattung", "value": "Unmöbliert (Möbel teilw. in Bad & Küche verbleiben)" },
         { "label": "Besonderheit", "value": "2 separate Eingänge" }
       ]
     },

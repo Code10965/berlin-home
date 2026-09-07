@@ -47,6 +47,7 @@
         { "label": "Energy certificate", "value": "on request" },
         { "label": "Base rent", "value": "€1,430" },
         { "label": "Utilities excl. property tax", "value": "€320" },
+        { "label": "Furnishing", "value": "Unfurnished (some furniture remains in bathroom & kitchen)" },
         { "label": "Special feature", "value": "2 separate entrances" }
       ]
     },
